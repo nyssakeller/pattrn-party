@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subheader {
+  width: 1000px;
+}
+
+h3 {
+  margin-left: 50px;
+}
+
+.tab-pic {
+  height: 300px;
+  width: 250px;
+}
