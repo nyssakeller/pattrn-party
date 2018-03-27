@@ -12,13 +12,19 @@ hr {
 
 .subheader {
   bottom: 28px;
-  left: 120px;
+  margin: 0 40px 0 340px;
   position: relative;
-  width: 970px;
+  width: 68%;
 }
 
 h3 {
-  margin-left: 80px;
+  margin-left: 5%;
+}
+
+.tab-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tab-buttons {
@@ -78,11 +84,25 @@ p {
 
 .view-tab-code {
   border: black solid 1px;
-  left: 580px;
-  padding: 15px 80px;
+  padding: 15px 0;
   position: relative;
   top: 60px;
+  text-align: center;
   text-decoration: none;
+  width: 600px;
+}
+
+@media(max-width: 1200px) {
+  .subheader {
+    margin-left: 290px;
+    width: 71%;
+  }
+}
+
+@media(max-width: 1085px) {
+  h3 {
+    margin-left: 2%;
+  }
 }
 
 @media(max-width: 990px) {
@@ -96,6 +116,10 @@ p {
 
   hr {
     width: 400px;
+  }
+
+  .view-tab-code {
+    left: 38%;
   }
 }
 
@@ -123,5 +147,10 @@ p {
   .tab-text {
     margin: 0 auto;
     width: 90%;
+  }
+  
+  .view-tab-code {
+    left: 26%;
+    padding: 15px 140px;
   }
 }
