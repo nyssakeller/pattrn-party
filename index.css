@@ -28,6 +28,7 @@ h3 {
 
 button {
   border: black solid .5px;
+  outline: 0;
   font-size: 14px;
   height: 40px;
   width: 290px;
@@ -38,6 +39,10 @@ button {
 }
 
 .tab {
+  display: none;
+}
+
+.active-card {
   border: black solid .5px;
   border-top: none;
   display: flex;
