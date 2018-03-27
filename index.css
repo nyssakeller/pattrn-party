@@ -4,6 +4,10 @@ header {
   justify-content: space-between;
 }
 
+hr {
+  width: 580px;
+}
+
 .subheader {
   bottom: 28px;
   left: 120px;
@@ -23,12 +27,19 @@ h3 {
 }
 
 button {
+  border: black solid .5px;
+  font-size: 14px;
   height: 40px;
   width: 290px;
 }
 
+.active {
+  border-bottom: none;
+}
+
 .tab {
-  border: black solid 1px;
+  border: black solid .5px;
+  border-top: none;
   display: flex;
   flex-direction: row;
   height: 350px;
@@ -39,12 +50,13 @@ button {
 
 .tab-pic {
   height: 300px;
+  margin: auto 0;
   width: 250px;
 }
 
 .tab-text {
-  margin-left: 40px;
-  width: 60%;
+  margin: 10px 0 0 40px;
+  width: 65%;
 }
 
 h4 {
