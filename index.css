@@ -5,6 +5,8 @@ header {
 }
 
 hr {
+  position: relative;
+  bottom: 10px;
   width: 580px;
 }
 
@@ -65,10 +67,12 @@ button {
 }
 
 h4 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
 }
 
 p {
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
 }
 
@@ -79,4 +83,45 @@ p {
   position: relative;
   top: 60px;
   text-decoration: none;
+}
+
+@media(max-width: 990px) {
+  .tab-buttons {
+    width: 750px;
+  }
+
+  .tab {
+    width: 700px;
+  }
+
+  hr {
+    width: 400px;
+  }
+}
+
+@media(max-width: 765px) {
+  .tab-buttons {
+    width: 351px;
+  }
+
+  .tab {
+    flex-direction: column;
+    height: 770px;
+    padding: 0;
+    width: 350px;
+  }
+
+  .tab-pic {
+    margin: 0;
+    width: 100%;
+  }
+
+  hr {
+    width: 310px;
+  }
+
+  .tab-text {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
