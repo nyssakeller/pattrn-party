@@ -71,3 +71,12 @@ h4 {
 p {
   font-size: 18px;
 }
+
+.view-tab-code {
+  border: black solid 1px;
+  left: 580px;
+  padding: 15px 80px;
+  position: relative;
+  top: 60px;
+  text-decoration: none;
+}
