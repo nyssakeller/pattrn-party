@@ -1,7 +1,29 @@
+body {
+  margin: 0;
+}
+
 header {
+  align-items: center;
+  background-color: #1B1B1E;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+h1 {
+  color: #A9CEF4;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-left: 5%;
+}
+
+h2 {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-right: 6%;
 }
 
 hr {
@@ -12,12 +34,15 @@ hr {
 
 .subheader {
   bottom: 28px;
-  margin: 0 40px 0 340px;
+  margin: 0 40px 0 380px;
   position: relative;
-  width: 68%;
+  width: 67%;
 }
 
 h3 {
+  color: #36494E;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   margin-left: 5%;
 }
 
@@ -35,15 +60,22 @@ h3 {
 }
 
 button {
-  border: black solid .5px;
-  outline: 0;
+  background-color: #597081;
+  border-right: #fff solid .5px;
+  color: #fff;
   font-size: 14px;
+  font-weight: 700;
   height: 40px;
+  outline: 0;
   width: 290px;
 }
 
 .active {
+  background-color: #D8DBE2;
+  border-color: #D8DBE2;
+  border-right: #fff solid .5px;
   border-bottom: none;
+  color: rgb(59, 59, 59);
 }
 
 .tab {
@@ -51,8 +83,10 @@ button {
 }
 
 .active-card {
-  border: black solid .5px;
+  background-color: #D8DBE2;
+  border: #D8DBE2 solid .5px;
   border-top: none;
+  color: rgb(39, 39, 39);
   display: flex;
   flex-direction: row;
   height: 350px;
@@ -83,25 +117,38 @@ p {
 }
 
 .view-tab-code {
-  border: black solid 1px;
+  background-color: #597081;
+  border: #A9BCD0 solid 1px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
   padding: 15px 0;
   position: relative;
   top: 60px;
   text-align: center;
   text-decoration: none;
-  width: 600px;
+  width: 951px;
+}
+
+.view-tab-code:hover {
+  background-color: #A9CEF4;
+  border-color: #A9CEF4;
 }
 
 @media(max-width: 1200px) {
   .subheader {
-    margin-left: 290px;
-    width: 71%;
+    margin-left: 370px;
+    width: 65%;
   }
 }
 
 @media(max-width: 1085px) {
   h3 {
     margin-left: 2%;
+  }
+
+  .subheader {
+    margin-left: 330px;
+    width: 60%;
   }
 }
 
@@ -119,23 +166,58 @@ p {
   }
 
   .view-tab-code {
-    left: 38%;
+    width: 750px;
   }
 }
 
 @media(max-width: 765px) {
+  header {
+    flex-direction: column;
+    height: 150px; 
+    margin-bottom: 80px; 
+  }
+
+  h1 {
+    margin-left: 0;
+  }
+  
+  h2 {
+    border-top: solid 1px rgb(58, 58, 71);
+    margin-right: 0;
+    margin-top: 0;
+    padding: 25px 10px 5px 10px;
+  }
+
+  h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .subheader {
+    bottom: 10px;
+    margin: 0 auto;
+    width: 130px;
+  }
+
   .tab-buttons {
+    flex-direction: column;
     width: 351px;
+  }
+
+  button {
+    height: 60px;
+    width: 352px;
   }
 
   .tab {
     flex-direction: column;
-    height: 770px;
+    height: 820px;
     padding: 0;
     width: 350px;
   }
 
   .tab-pic {
+    height: 380px;
     margin: 0;
     width: 100%;
   }
@@ -148,9 +230,9 @@ p {
     margin: 0 auto;
     width: 90%;
   }
-  
+
   .view-tab-code {
-    left: 26%;
-    padding: 15px 140px;
+    width: 350px;
   }
+  
 }
