@@ -236,3 +236,92 @@ p {
   }
   
 }
+
+/*Card CSS*/
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 200px 6%; 
+
+}
+
+.card {
+  background-color: #D8DBE2;
+  border: 1px solid rgb(147, 147, 147);
+  height: 300px;
+  margin: 10px;
+}
+
+.small-card {
+  width: 31%;
+}
+
+.big-card {
+  width: 63.7%;
+}
+
+.card-header {
+  background-color: #597081;
+  border-bottom: solid 1px rgb(147, 147, 147);
+}
+
+.cards h4 {
+  color: rgb(39, 39, 39);
+  background-color: #597081;
+  font-size: 18px;
+  margin-left: 15px;
+  margin-top: 0;
+  padding-top: 25px;
+}
+
+@media(max-width: 1072px) {
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .small-card {
+    width: 63.7%
+  }
+
+}
+
+
+/*NavLink Header*/
+
+.nav-bar {
+  background-color: #597081;
+  height: 100px;
+  margin: 0 auto 200px;
+  padding: 5px 30px;
+  width: 80%;
+}
+
+#brittney {
+  border-radius: 40px;
+  height: 80px;
+  width: 80px;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+input {
+  background-image: url('https://www.iconsdb.com/icons/preview/color/999999/search-13-xxl.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  font-size: 15px;
+  height: 25px;
+  padding-left: 20px;
+  width: 160px;  
+}
+
+input:focus {
+  outline: none;
+}
+
+

@@ -7,9 +7,7 @@ document.querySelector('.tab1').classList.add('active-card');
 const toggleClass = e => {
   activeArr.shift().classList.remove('active');
   activeArr.push(e.target);
-  activeArr.forEach(button => {
-    button.classList.toggle('active')
-  });
+  activeArr.forEach(button => button.classList.toggle('active'));
   showCard(e);
 }
 
