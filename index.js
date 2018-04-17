@@ -23,3 +23,20 @@ document.querySelectorAll('.tab-btn').forEach(button => {
 
 
 
+
+//Mobile Nav
+
+toggleMobileNav = e => {
+  console.log(e.target)
+  document.querySelector('input').classList.toggle('active-nav')
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.toggle('active-nav');
+  });
+}
+
+document.querySelector('.nav-bar').addEventListener('click', (e) => {
+  toggleMobileNav(e);
+})
+
+
+
