@@ -121,6 +121,7 @@ p {
   border: #A9BCD0 solid 1px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
   padding: 15px 0;
   position: relative;
   top: 60px;
@@ -298,15 +299,28 @@ p {
   width: 80%;
 }
 
+.mobile-nav {
+  display: none;
+  height: 120px;
+  margin: 0 auto;
+  width: 550px;
+}
+
+.menu {
+  display: none;
+}
+
 #brittney {
   border-radius: 40px;
   height: 80px;
   width: 80px;
 }
 
+
 .nav-link {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  margin: 50px;
 }
 
 input {
@@ -324,4 +338,97 @@ input:focus {
   outline: none;
 }
 
+@media(max-width: 1190px) {
+  .nav-link {
+    margin: 15px;
+  }
+}
+
+@media(max-width: 1070px) {
+  .nav-link {
+    margin: 10px;
+  }
+}
+
+@media(max-width: 1040px) {
+  .nav-link {
+    margin: 5px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .nav-bar {
+    flex-direction: column;
+    width: 600px;
+  }
+
+  .headding {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .link-area {
+    background-color: rgb(147, 147, 147);
+    margin-top: 105px;
+    padding: 0 30px;
+    text-align: center;
+    width: 600px;
+  }
+
+  .nav-link {
+    display: none;
+    margin: 50px;
+  }
+
+  .active-nav {
+    display: block;
+  }
+
+  input {
+    display: none;
+    margin: 40px auto;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu {
+    color: white;
+    display: inline;
+    margin-left: 200px;
+  }
+
+  #brittney {
+    margin-right: 200px;
+    margin-top: 10px;
+  }
+}
+
+@media(max-width: 660px) {
+  .nav-bar {
+    width: 350px;
+  }
+
+  .link-area {
+    width: 350px;
+    text-align: left;
+  }
+
+  .nav-link {
+    margin-left: 0px;
+  }
+
+  .menu {
+    margin-left: 0;
+  }
+
+  input {
+    height: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 93%;
+  }
+}
 
